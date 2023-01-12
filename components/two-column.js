@@ -2,13 +2,13 @@ import styles from 'styles/two-column.module.css'
 
 export function TwoColumn ({ children }) {
   return (
-    <div className={styles.fleContainer}>
+    <div className={styles.flexContainer}>
       {children}
     </div>
   )
 }
 
-export function twoColumnMain ({ children }) {
+export function TwoColumnMain ({ children }) {
   return (
     <div className={styles.main}>
       {children}

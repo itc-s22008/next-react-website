@@ -11,7 +11,11 @@ export default function About () {
   return (
     <Container>
       <Meta pageTitle='アバウト' />
-      <Hero title='About' subtitle='About development activities' />
+      <Hero title='About' subtitle='About development activities'
+        pageImg={eyecarch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
 
       <figure>
         <Image

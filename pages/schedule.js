@@ -4,9 +4,16 @@ export default function Schedule () {
 }
 
 export async function getStaticProps () {
-  console.log(1)
-  console.log(2)
-  console.log(3)
+  const resPromise = client.get({
+    endpoint: 'blogs'
+  })
+
+  try {
+    const res = await resPromise
+    console.log(res)
+  } catch (err) {
+    console.log(err)
+  }
 
   return {
     props: {}

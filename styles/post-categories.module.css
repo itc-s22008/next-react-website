@@ -3,20 +3,20 @@
   align-items: baseline;
   gap: 1.25rem;
   color: var(--gray-50);
-  }
+}
 
 @media (min-width: 768px) {
   .flexContainer {
-    flex-direction; column
-    }
+    flex-direction: column;
+  }
 }
 
 .heading {
   font-size: var(--small-heading2);
-  }
+}
 
 .list {
-  components: flexContainer;
+  composes: flexContainer;
   font-size: var(--small-heading3);
   gap: 0.75rem;
- }  
+}

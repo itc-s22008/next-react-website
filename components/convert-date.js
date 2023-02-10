@@ -1,9 +1,9 @@
-import { pageISO, format } from 'date-fns'
+import { parseISO, format } from 'date-fns'
 import ja from 'date-fns/locale/ja'
 
-export default function ConvartDate ({ dateISO }) {
+export default function ConvertDate ({ dateISO }) {
   return (
-    <time dateTite={dateISO}>
+    <time dateTime={dateISO}>
       {format(parseISO(dateISO), 'yyyy年MM月dd日', {
         locale: ja
       })}
